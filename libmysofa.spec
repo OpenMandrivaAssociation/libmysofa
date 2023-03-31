@@ -5,7 +5,7 @@
 Summary:	C library to read HRTFs if they are stored in the AES69-2015 SOFA format
 Name:		libmysofa
 Version:	1.2.1
-Release:	1
+Release:	2
 Group:		System/Libraries
 License:	BSD
 URL:		https://github.com/hoene/libmysofa
