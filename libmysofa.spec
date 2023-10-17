@@ -51,7 +51,7 @@ libmysofa library for ffmpeg.
 This package contains the development files.
 
 %files -n %{devname}
-%{_includedir}/mysofa.h
+#{_includedir}/mysofa.h
 %{_libdir}/libmysofa.so
 %{_libdir}/pkgconfig/libmysofa.pc
 
