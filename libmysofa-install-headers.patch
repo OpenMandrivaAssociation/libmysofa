@@ -1,0 +1,11 @@
+diff -up libmysofa-1.3.2/src/CMakeLists.txt.omv~ libmysofa-1.3.2/src/CMakeLists.txt
+--- libmysofa-1.3.2/src/CMakeLists.txt.omv~	2023-10-19 19:20:02.947729841 +0200
++++ libmysofa-1.3.2/src/CMakeLists.txt	2023-10-19 19:21:14.024431186 +0200
+@@ -120,6 +120,7 @@ if(BUILD_SHARED_LIBS)
+     "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/hrtf>"
+     $<INSTALL_INTERFACE:include/>
+   )
++  set_target_properties(mysofa-shared PROPERTIES PUBLIC_HEADER "${public-headers}" )
+   target_link_libraries(mysofa-shared PRIVATE ${MATH} ${ZLIB_LIBRARIES})
+   set_target_properties(mysofa-shared
+                         PROPERTIES OUTPUT_NAME mysofa CLEAN_DIRECT_OUTPUT 1)
