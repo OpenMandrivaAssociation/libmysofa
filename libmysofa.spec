@@ -56,6 +56,7 @@ This package contains the development files.
 %{_libdir}/pkgconfig/libmysofa.pc
 %{_libdir}/cmake/mysofa/
 %{_includedir}/mysofa.h
+%{_includedir}/mysofa_export.h
 
 # -------------------------------------------------------------------------
 
